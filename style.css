@@ -1,0 +1,296 @@
+body {
+  background-color: rgb(255, 255, 255);
+  padding: 0%;
+  margin: 0%;
+  font-family: barlow;
+}
+
+:root {
+  --bg-gradient: radial-gradient(
+      circle at 3.6751302083333335% 6.940104166666666%,
+      #4d6001 0%,
+      10.5%,
+      rgba(77, 96, 1, 0) 35%
+    ),
+    radial-gradient(
+      circle at 92.96712239583333% 9.554036458333332%,
+      #faaa63 0%,
+      17.5%,
+      rgba(250, 170, 99, 0) 35%
+    ),
+    radial-gradient(
+      circle at 95.20670572916666% 90.48177083333333%,
+      #c9c6ff 0%,
+      34.1%,
+      rgba(201, 198, 255, 0) 55%
+    ),
+    radial-gradient(
+      circle at 4.313151041666666% 93.34635416666667%,
+      #97b49d 0%,
+      29.900000000000002%,
+      rgba(151, 180, 157, 0) 65%
+    ),
+    radial-gradient(
+      circle at 46.555989583333336% 11.50390625%,
+      rgba(214, 222, 72, 0.99) 0%,
+      25%,
+      rgba(214, 222, 72, 0) 50%
+    ),
+    radial-gradient(
+      circle at 51.121419270833336% 89.98697916666667%,
+      #93c3ff 0%,
+      42%,
+      rgba(147, 195, 255, 0) 70%
+    ),
+    radial-gradient(
+      circle at 48.9013671875% 49.521484375%,
+      #fdfdfe 0%,
+      100%,
+      rgba(253, 253, 254, 0) 100%
+    );
+}
+
+@font-face {
+  font-family: barlow;
+  src: url(media/fonts/Barlow-Regular.ttf);
+}
+
+@font-face {
+  font-family: josefin-sans;
+  src: url(media/fonts/JosefinSans.ttf);
+}
+
+@font-face {
+  font-family: avenir;
+  src: url(media/fonts/Avenir.ttf);
+}
+
+header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+  margin: 0px;
+  ul {
+    list-style-type: none;
+    text-align: center;
+    overflow: hidden;
+    padding: 0%;
+    margin: 0%;
+    a {
+      color: black;
+      text-align: center;
+      text-decoration: none;
+      padding: 15px;
+    }
+  }
+  li {
+    display: inline-block;
+  }
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+
+  width: 100%;
+  height: 180.2px;
+  h1 {
+    font-size: 22px;
+    font-family: barlow;
+  }
+  a {
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+    font-family: josefin-sans;
+  }
+}
+
+.linkbutton {
+  background-color: rgb(228, 133, 31);
+  border: none;
+  color: black;
+  text-align: center;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  font-family: barlow;
+  width: 142px;
+  height: 42px;
+  border: 1px solid black;
+  border-radius: 3px;
+  transition: 0.25s;
+}
+
+.linkbutton:hover {
+  color: black;
+  background-color: white;
+}
+
+.sectionC {
+  width: 100%;
+  padding: 0;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.sectionR {
+  width: 100%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.containerC {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 5px;
+  width: 40%;
+  margin: 10px;
+  border: 2px solid white;
+  background-color: white;
+  border-radius: 15px;
+}
+
+.containerR {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  text-align: center;
+  padding: 10px;
+  width: 40%;
+  margin: 10px;
+  border: 2px solid white;
+  background-color: white;
+  border-radius: 15px;
+}
+
+.title {
+  color: #1f2201;
+  font-size: 40px;
+  font-family: barlow;
+  margin: 0;
+  padding: 0;
+}
+
+.sheading {
+  color: black;
+  font-size: 16px;
+  font-family: josefin-sans;
+}
+
+.content {
+  color: black;
+  font-size: 16px;
+  font-family: josefin-sans;
+  font-weight: 250;
+}
+
+div.vr {
+  background-color: black;
+  width: 1px;
+  height: 150px;
+}
+
+.rocket {
+  transform: rotate(55deg);
+  animation: 1s ease-out 0s spin-in;
+
+  animation-play-state: paused;
+  max-width: 145px;
+  max-height: 145px;
+}
+
+img.icon {
+  width: 100px;
+  margin: 3px;
+}
+
+.photos {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  img {
+    width: 100%;
+    animation: 0.8s linear 0s fade-slide-in;
+    animation-play-state: paused;
+  }
+  > div {
+    width: 20%;
+    margin: 3%;
+  }
+  div.caption {
+    background-color: #d5d5d5;
+    padding: 4%;
+  }
+  h3 {
+    margin: 0;
+  }
+  p {
+    margin: 0;
+  }
+}
+
+form.contact {
+  background-color: #d5d5d5;
+  border-radius: 10px;
+  border: 2px solid black;
+  width: 40%;
+  padding: 2%;
+  display: flex;
+  justify-content: center;
+  align-items: left;
+  flex-direction: column;
+  label {
+    margin: 2%;
+  }
+  input {
+    border: 0.5px solid gray;
+    border-radius: 4px;
+  }
+}
+
+.expand:hover {
+  padding-left: 2%;
+  padding-right: 2%;
+}
+.expand {
+  transition: 0.75s;
+}
+
+div.donate {
+  background-color: #d5d5d5;
+  padding: 2%;
+  margin: 2%;
+  border-radius: 10px;
+}
+
+div.imgstd {
+  width: 20%;
+  border-radius: 10px;
+  img {
+    width: 100%;
+    object-fit: contain;
+  }
+}

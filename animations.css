@@ -1,0 +1,78 @@
+/* ::view-transition-old(root) {
+  animation: 1s transition-out 0s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+::view-transition-new(root) {
+  animation: 1s transition-in 0s cubic-bezier(0.22, 1, 0.36, 1);
+} */
+
+@keyframes transition-out {
+  from {
+    translate: 0;
+  }
+  to {
+    translate: -100%;
+  }
+}
+
+@keyframes transition-in {
+  from {
+    translate: 100%;
+  }
+  to {
+    translate: 0;
+  }
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0%;
+  }
+  50% {
+    opacity: 100%;
+  }
+}
+
+@keyframes spin-in {
+  from {
+    opacity: 0;
+    translate: -30em -20em;
+    transform: rotate(-30deg);
+  }
+  to {
+    opacity: 1;
+    translate: 0;
+    transform: rotate(55deg);
+  }
+}
+
+@keyframes fade-slide-in {
+  from {
+    opacity: 0;
+    translate: 40% 0;
+  }
+  to {
+    opacity: 1;
+    translate: 0%;
+  }
+}
+
+header {
+  view-transition-name: header;
+  contain: paint;
+}
+
+footer {
+  view-transition-name: footer;
+  contain: paint;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+  background: white;
+  transition: 0.5s;
+  animation-timing-function: linear;
+}
