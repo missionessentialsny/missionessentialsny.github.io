@@ -27,7 +27,7 @@ window.onload = () => {
 
   let navbar = document.querySelector("header");
   window.onscroll = () => {
-    if (window.scrollY > navbar.offsetHeight) {
+    if (window.scrollY * 1.25 > navbar.offsetHeight) {
       navbar.style.top = -navbar.offsetHeight + "px";
     } else if (window.scrollY < navbar.offsetHeight) {
       navbar.style.top = 0;
