@@ -65,12 +65,7 @@ body {
   src: url(media/fonts/Avenir.ttf);
 }
 
-header {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  padding: 20px;
-  margin: 0px;
+.navbar {
   ul {
     list-style-type: none;
     text-align: center;
@@ -83,9 +78,9 @@ header {
       text-decoration: none;
       padding: 15px;
     }
-  }
-  li {
-    display: inline-block;
+    li {
+      display: inline-block;
+    }
   }
 }
 
